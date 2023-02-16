@@ -35,4 +35,4 @@ $response = $client->request('POST', '', [
     ]
 ]);
 
-echo $response->getBody();
+print_r(json_decode((string) $response->getBody()));
